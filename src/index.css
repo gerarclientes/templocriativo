@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-temple-gold: #D4A756;
+  --color-temple-white: #FFFFFF;
+  --color-temple-black: #000000;
+  --color-temple-offwhite: #EAE3DC;
+  
+  --color-temple-black-soft: #111111;
+  --color-temple-gray: #888888;
+}
+
+body {
+  @apply bg-temple-white text-temple-black font-sans font-normal antialiased overflow-x-hidden selection:bg-temple-gold/30 selection:text-temple-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-normal;
+}
